@@ -1,14 +1,16 @@
-const mongoose = require('mongoose')
-const Scehma = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 //Create Scehma
 const ItemSchema = new Schema({
-  name:{
+  name: {
     type: String,
-    required:true
-  }
-  date:{
+    required: true
+  },
+  date: {
     type: Date,
     default: Date.now
   }
-})
+});
+
+module.exports = Item = mongoose.model("item", ItemSchema);
