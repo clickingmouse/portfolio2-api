@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 //Item model
-const Post = require("../../models/Post");
+const Post = require("../../models/post");
 
 // @ route GET api/items
 // @ desc get all items
